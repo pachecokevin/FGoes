@@ -5,7 +5,7 @@ let canvas, ctx, particulas = [];
 
 // Função para criar elementos aleatórios
 function createElement() {
-    const container = document.getElementById('container1');
+    const container = document.getElementById("container1");
     
     // Escolher aleatoriamente entre coração e girassol
     const isHeart = Math.random() > 0.5; // 50% chance para cada um
@@ -109,5 +109,6 @@ function loopFogos() {
   if (Math.random() < 0.05) criarFogos();
   requestAnimationFrame(loopFogos);
 }
+
 
 
