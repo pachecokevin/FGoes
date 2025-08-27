@@ -5,55 +5,54 @@ body {
   color: white;
   text-align: center;
   background-image: url('essa pasta/background.jpeg');
-  background-repeat: repeat-y;
-  background-size: contain;
+  background-repeat: repeat;
+  background-size: cover;  /* Faz a imagem de fundo cobrir toda a tela */
   overflow-x: hidden;
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(128, 128, 128, 0.5); /* Fundo cinza meio transparente */
   padding: 30px;
   border-radius: 20px;
   max-width: 800px;
   margin: auto;
   margin-top: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Sombra para o fundo */
 }
 
 #container1 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;  /* Impede que os corações e girassóis interfiram na rolagem */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;  /* Impede que os corações e girassóis interfiram na rolagem */
 }
 
 /* Corações e girassóis */
 .heart, .sunflower {
-    position: fixed;  /* Faz com que eles fiquem fixos na tela */
-    font-size: 40px;
-    opacity: 1;
-    animation: moveUp 5s ease-in-out infinite;
-    pointer-events: none;  /* Não vai interferir nos cliques da página */
-    z-index: 9999;  /* Garante que fiquem acima de qualquer outro conteúdo */
-    bottom: -50px; /* Garante que comecem fora da tela */
+  position: fixed;  /* Faz com que eles fiquem fixos na tela */
+  font-size: 40px;
+  opacity: 1;
+  animation: moveUp 5s ease-in-out infinite;
+  pointer-events: none;  /* Não vai interferir nos cliques da página */
+  z-index: 9999;  /* Garante que fiquem acima de qualquer outro conteúdo */
+  bottom: -50px; /* Garante que comecem fora da tela */
 }
 
 /* Animação de subir */
 @keyframes moveUp {
-    0% {
-        bottom: -50px; /* Começa fora da tela */
-        opacity: 1;
-    }
-    50% {
-        bottom: 50%; /* No meio da tela */
-        opacity: 0.5;
-    }
-    100% {
-        bottom: 100%; /* Desaparece no topo */
-        opacity: 0;
-    }
+  0% {
+    bottom: -50px; /* Começa fora da tela */
+    opacity: 1;
+  }
+  50% {
+    bottom: 50%; /* No meio da tela */
+    opacity: 0.5;
+  }
+  100% {
+    bottom: 100%; /* Desaparece no topo */
+    opacity: 0;
+  }
 }
-
-
 
 h1 {
   font-size: 3em;
@@ -160,14 +159,4 @@ button:hover {
   left: 35%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
-
 }
-
-
-
-
-
-
-
-
-
