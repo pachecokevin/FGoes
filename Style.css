@@ -19,6 +19,44 @@ body {
   margin-top: 30px;
 }
 
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.heart {
+    font-size: 50px;
+    animation: rotateHeart 3s infinite, bounceHeart 1.5s infinite;
+}
+
+/* Animação de rotação */
+@keyframes rotateHeart {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animação de "pulsar" (subir e descer) */
+@keyframes bounceHeart {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
 h1 {
   font-size: 3em;
   margin-bottom: 20px;
@@ -124,4 +162,5 @@ button:hover {
   left: 35%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
+
 }
