@@ -25,7 +25,7 @@ body {
     padding: 0;
     height: 100vh;
     background-color: #f3f3f3;
-    overflow: hidden; /* Impede que apareçam barras de rolagem */
+    overflow-y: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,6 +168,7 @@ button:hover {
   z-index: 1000;
 
 }
+
 
 
 
