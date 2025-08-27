@@ -57,13 +57,13 @@ body {
 h1 {
   font-size: 4em;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Sombra preta */
+
 }
 
 p {
   font-size: 2em;
   margin: 20px 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Sombra preta */
+  
 }
 
 .fotos {
@@ -162,6 +162,7 @@ button:hover {
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
 }
+
 
 
 
