@@ -19,42 +19,61 @@ body {
   margin-top: 30px;
 }
 
-display: flex;
+body {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #f3f3f3;
+    overflow: hidden; /* Impede que apareçam barras de rolagem */
 }
 
 .container {
-    display: flex;
-    gap: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .heart {
+    position: absolute;
     font-size: 50px;
-    animation: rotateHeart 3s infinite, bounceHeart 1.5s infinite;
+    animation: moveUp 5s ease-in-out infinite;
+    opacity: 1;
+    animation-delay: calc(0.5s * var(--i)); /* Para atrasar a animação de cada coração */
 }
 
-/* Animação de rotação */
-@keyframes rotateHeart {
+/* Criando o movimento de subir e desaparecer */
+@keyframes moveUp {
     0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* Animação de "pulsar" (subir e descer) */
-@keyframes bounceHeart {
-    0%, 100% {
-        transform: translateY(0);
+        bottom: -50px; /* Começa abaixo da tela */
+        opacity: 1;
     }
     50% {
-        transform: translateY(-30px);
+        bottom: 50%; /* Chega no meio da tela */
+        opacity: 0.5; /* Começa a desaparecer */
     }
+    100% {
+        bottom: 100%; /* Vai para cima da tela */
+        opacity: 0; /* Fica invisível */
+    }
+}
+
+/* Atribuindo um atraso incremental aos corações para que subam em momentos diferentes */
+.heart:nth-child(1) {
+    --i: 0;
+}
+
+.heart:nth-child(2) {
+    --i: 1;
+}
+
+.heart:nth-child(3) {
+    --i: 2;
+}
+
+.heart:nth-child(4) {
+    --i: 3;
 }
 
 h1 {
@@ -164,3 +183,4 @@ button:hover {
   z-index: 1000;
 
 }
+
