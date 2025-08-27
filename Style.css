@@ -19,14 +19,16 @@ body {
   margin-top: 30px;
 }
 
+/* styles.css */
 body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f3f3f3;
+    overflow: hidden; /* Impede que apareçam barras de rolagem */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f3f3f3;
-    overflow: hidden; /* Impede que apareçam barras de rolagem */
 }
 
 .container {
@@ -35,46 +37,29 @@ body {
     height: 100%;
 }
 
-.heart {
+.heart, .sunflower {
     position: absolute;
-    font-size: 50px;
-    animation: moveUp 5s ease-in-out infinite;
+    font-size: 40px;
     opacity: 1;
-    animation-delay: calc(0.5s * var(--i)); /* Para atrasar a animação de cada coração */
+    animation: moveUp 5s ease-in-out infinite;
 }
 
-/* Criando o movimento de subir e desaparecer */
+/* Animação de subir e desaparecer */
 @keyframes moveUp {
     0% {
-        bottom: -50px; /* Começa abaixo da tela */
+        bottom: -50px;
         opacity: 1;
     }
     50% {
-        bottom: 50%; /* Chega no meio da tela */
-        opacity: 0.5; /* Começa a desaparecer */
+        bottom: 50%;
+        opacity: 0.5;
     }
     100% {
-        bottom: 100%; /* Vai para cima da tela */
-        opacity: 0; /* Fica invisível */
+        bottom: 100%;
+        opacity: 0;
     }
 }
 
-/* Atribuindo um atraso incremental aos corações para que subam em momentos diferentes */
-.heart:nth-child(1) {
-    --i: 0;
-}
-
-.heart:nth-child(2) {
-    --i: 1;
-}
-
-.flower:nth-child(3) {
-    --i: 2;
-}
-
-.flower:nth-child(4) {
-    --i: 3;
-}
 
 h1 {
   font-size: 3em;
@@ -183,5 +168,6 @@ button:hover {
   z-index: 1000;
 
 }
+
 
 
