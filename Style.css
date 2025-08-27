@@ -68,11 +68,11 @@ body {
     --i: 1;
 }
 
-.heart:nth-child(3) {
+.flower:nth-child(3) {
     --i: 2;
 }
 
-.heart:nth-child(4) {
+.flower:nth-child(4) {
     --i: 3;
 }
 
@@ -183,4 +183,5 @@ button:hover {
   z-index: 1000;
 
 }
+
 
