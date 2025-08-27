@@ -57,11 +57,13 @@ body {
 h1 {
   font-size: 3em;
   margin-bottom: 20px;
+  outline: 2px solid #000000; 
 }
 
 p {
   font-size: 1.5em;
   margin: 20px 0;
+  outline: 2px solid #000000; 
 }
 
 .fotos {
@@ -160,4 +162,5 @@ button:hover {
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
 }
+
 
