@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+  background-image: url('essa pasta/background.jpeg');
+  background-repeat: repeat-y;
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.fotos {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto {
+  width: 250px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.video {
+  width: 400px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #ff4081;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e91e63;
+}
+
+.emoji {
+  position: fixed;
+  bottom: -50px;
+  font-size: 2em;
+  animation: subir 5s linear infinite;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@keyframes subir {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+#fogosCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.topo {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+#telaEsmaecida {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  display: none;
+}
+
+#mensagemFinal {
+  display: none;
+  font-size: 3em;
+  font-weight: bold;
+  color: #ffeb3b;
+  text-shadow: 4px 4px 10px #000;
+  margin-top: 40px;
+  transition: opacity 1s, transform 1s;
+  transform: scale(0);
+  opacity: 0;
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1000;
+}
