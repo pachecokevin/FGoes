@@ -25,10 +25,11 @@ body {
     padding: 0;
     height: 100vh;
     background-color: #f3f3f3;
-    overflow-y: scroll;
+    overflow-y: scroll;  /* Permite rolar a página verticalmente */
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -38,30 +39,33 @@ body {
     pointer-events: none;  /* Impede que os corações e girassóis interfiram na rolagem */
 }
 
+/* Corações e girassóis */
 .heart, .sunflower {
-    position: fixed;
+    position: fixed;  /* Faz com que eles fiquem fixos na tela */
     font-size: 40px;
     opacity: 1;
     animation: moveUp 5s ease-in-out infinite;
     pointer-events: none;  /* Não vai interferir nos cliques da página */
     z-index: 9999;  /* Garante que fiquem acima de qualquer outro conteúdo */
+    bottom: -50px; /* Garante que comecem fora da tela */
 }
 
-/* Animação de subir e desaparecer */
+/* Animação de subir */
 @keyframes moveUp {
     0% {
-        bottom: -50px;
+        bottom: -50px; /* Começa fora da tela */
         opacity: 1;
     }
     50% {
-        bottom: 50%;
+        bottom: 50%; /* No meio da tela */
         opacity: 0.5;
     }
     100% {
-        bottom: 100%;
+        bottom: 100%; /* Desaparece no topo */
         opacity: 0;
     }
 }
+
 
 
 h1 {
@@ -171,6 +175,7 @@ button:hover {
   z-index: 1000;
 
 }
+
 
 
 
