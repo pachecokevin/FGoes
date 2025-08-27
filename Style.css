@@ -19,19 +19,6 @@ body {
   margin-top: 30px;
 }
 
-/* styles.css */
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: #f3f3f3;
-    overflow-y: scroll;  /* Permite rolar a página verticalmente */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
 .container {
     position: relative;
     width: 100%;
@@ -175,6 +162,7 @@ button:hover {
   z-index: 1000;
 
 }
+
 
 
 
