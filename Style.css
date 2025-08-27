@@ -57,13 +57,16 @@ body {
 h1 {
   font-size: 3em;
   margin-bottom: 20px;
-  outline: 2px solid #000000; 
-}
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Sombra preta */
+  border: 2px solid black;  /* Borda preta */
+  padding: 5px;
 
 p {
   font-size: 1.5em;
   margin: 20px 0;
-  outline: 2px solid #000000; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Sombra preta */
+  border: 2px solid black;  /* Borda preta */
+  padding: 5px;
 }
 
 .fotos {
@@ -162,5 +165,6 @@ button:hover {
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
 }
+
 
 
