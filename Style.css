@@ -1,58 +1,27 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'minhafonte', sans-serif;
   color: white;
   text-align: center;
   background-image: url('essa pasta/background.jpeg');
-  background-repeat: repeat;
-  background-position: center center;
-  background-size: cover;  /* Faz a imagem de fundo cobrir toda a tela */
+  background-repeat: repeat-y;
+  background-size: contain;
   overflow-x: hidden;
 }
 
+ @font-face {
+  font-family: 'minhafonte';
+  src: url(font/KGSimplytheBest.ttf);
+ }
+
 .container {
-  background-color: rgba(128, 128, 128, 0.5); /* Fundo cinza meio transparente */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 30px;
   border-radius: 20px;
   max-width: 800px;
   margin: auto;
   margin-top: 30px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Sombra para o fundo */
-}
-
-#container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;  /* Impede que os corações e girassóis interfiram na rolagem */
-}
-
-/* Corações e girassóis */
-.heart, .sunflower {
-  position: fixed;  /* Faz com que eles fiquem fixos na tela */
-  font-size: 40px;
-  opacity: 1;
-  animation: moveUp 5s ease-in-out infinite;
-  pointer-events: none;  /* Não vai interferir nos cliques da página */
-  z-index: 9999;  /* Garante que fiquem acima de qualquer outro conteúdo */
-  bottom: -50px; /* Garante que comecem fora da tela */
-}
-
-/* Animação de subir */
-@keyframes moveUp {
-  0% {
-    bottom: -50px; /* Começa fora da tela */
-    opacity: 1;
-  }
-  50% {
-    bottom: 50%; /* No meio da tela */
-    opacity: 0.5;
-  }
-  100% {
-    bottom: 100%; /* Desaparece no topo */
-    opacity: 0;
-  }
 }
 
 h1 {
@@ -73,14 +42,14 @@ p {
 }
 
 .foto {
-  width: 250px;
+  width: 500px;
   border-radius: 15px;
   margin: 20px 0;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
 
 .video {
-  width: 400px;
+  width: 600px;
   border-radius: 15px;
   margin: 20px 0;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
@@ -147,7 +116,7 @@ button:hover {
 
 #mensagemFinal {
   display: none;
-  font-size: 3em;
+  font-size: 5em;
   font-weight: bold;
   color: #ffeb3b;
   text-shadow: 4px 4px 10px #000;
@@ -156,9 +125,8 @@ button:hover {
   transform: scale(0);
   opacity: 0;
   position: fixed;
-  top: 30%;
-  left: 35%;
+  top: 25%;
+  left: 27%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
 }
-
