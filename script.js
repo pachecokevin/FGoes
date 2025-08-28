@@ -1,42 +1,15 @@
 let fogosAtivos = false;
 let canvas, ctx, particulas = [];
 
-// script.js
-
-// Função para criar elementos aleatórios
-function createElement() {
-    const container = document.getElementById('container');
-    
-    // Escolher aleatoriamente entre coração e girassol
-    const isHeart = Math.random() > 0.5; // 50% chance para cada um
-    const element = document.createElement('span');
-    element.classList.add(isHeart ? 'heart' : 'sunflower');
-    element.textContent = isHeart ? '💖' : '🌻'; // Coração ou Girassol
-
-    // Definir posição aleatória horizontal
-    const randomX = Math.random() * 100; // Aleatório entre 0% e 100% da largura
-    const randomDelay = Math.random() * 2; // Aleatório para um atraso de animação
-
-    element.style.left = `${randomX}%`;
-    element.style.animationDelay = `${randomDelay}s`; // Atraso aleatório
-
-    // Adicionar ao container
-    container.appendChild(element);
-
-    // Remover o elemento após a animação
-    setTimeout(() => {
-        element.remove();
-    }, 5000); // Remover após 5 segundos (duração da animação)
-}
-
-// Criar corações e girassóis a cada 300ms
-setInterval(createElement, 300);
-
-
 function tocarMusica() {
-  const musica = document.getElementById("musica");
+  const musica = document.getElementById('musica');
+  const overlay = document.getElementById('overlay');
+
+  // Toca a música
   musica.play();
-  document.getElementById("botaoMusica").style.display = "none";
+
+  // Esconde o overlay
+  overlay.style.display = 'none';
 }
 
 function finalSurpresa() {
@@ -109,7 +82,3 @@ function loopFogos() {
   if (Math.random() < 0.05) criarFogos();
   requestAnimationFrame(loopFogos);
 }
-
-
-
-
