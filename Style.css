@@ -6,6 +6,7 @@ body {
   text-align: center;
   background-image: url('essa pasta/background.jpeg');
   background-repeat: repeat;
+  background-position: center center;
   background-size: cover;  /* Faz a imagem de fundo cobrir toda a tela */
   overflow-x: hidden;
 }
@@ -160,3 +161,4 @@ button:hover {
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
 }
+
