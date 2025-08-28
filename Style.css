@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'minhafonte', sans-serif;
   color: white;
+  text-shadow: 2px 2px 5px red;
   text-align: center;
   background-image: url('essa pasta/background.jpeg');
   background-repeat: repeat-y;
@@ -30,7 +31,7 @@ h1 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 20px 0;
 }
 
@@ -53,6 +54,44 @@ p {
   border-radius: 15px;
   margin: 20px 0;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Fundo escurecido cobrindo a tela toda */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.97); /* Preto quase sólido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Botão centralizado */
+#botaomusica {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ff4081;
+  color: white;
+  box-shadow: 0 0 10px #ff4081;
+  transition: all 0.3s ease;
+}
+
+#botaomusica:hover {
+  background-color: #e73370;
+  box-shadow: 0 0 20px #ff4081;
+}
+
+/* Esconde a mensagem final inicialmente */
+#mensagemFinal {
+  display: none;
 }
 
 button {
