@@ -113,8 +113,8 @@ button:hover {
 .emoji {
   position: fixed;
   bottom: -50px;
-  font-size: 2em;
-  animation: subir 5s linear infinite;
+  font-size: 3em;
+  animation: subir 8s linear infinite;
   opacity: 0.8;
   pointer-events: none;
 }
@@ -172,9 +172,9 @@ button:hover {
   transition: opacity 1s, transform 1s;
   transform: scale(0);
   opacity: 0;
-  position: centralized;
-  top: 0%;
-  left: 0%;
+  position: fixed;
+  top: 27%;
+  left: 23%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
 }
@@ -182,9 +182,7 @@ button:hover {
 
 
 
-#mensagemFinal p {
-  margin: 15px 0; /* Espaçamento entre os parágrafos */
-}
+
 
 
 
