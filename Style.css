@@ -164,14 +164,18 @@ button:hover {
   transform: scale(0);
   opacity: 0;
   position: fixed;
-  top: 5%;
-  left: 50%;
+  top: 50%;  /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
-  text-align: center;  /* Garantir que o texto dentro do elemento também esteja centralizado */
+  text-align: center;  /* Centraliza o texto dentro do elemento */
+  line-height: 1.5;  /* Espacamento entre as linhas */
 }
 
+#mensagemFinal p {
+  margin: 10px 0; /* Espaçamento entre os parágrafos */
 
+}
 
 
 
