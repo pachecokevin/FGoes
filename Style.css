@@ -118,10 +118,18 @@ button:hover {
   opacity: 0.8;
   pointer-events: none;
 }
-
 @keyframes subir {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(-110vh); opacity: 0; }
+  0% {
+    transform: translateY(0); /* Começa no ponto de origem */
+    opacity: 0.8;  /* Opacidade inicial */
+  }
+  50% {
+    opacity: 1;   /* Meio da animação, a opacidade aumenta para 1 */
+  }
+  100% {
+    transform: translateY(-100vh);  /* Desloca o emoji até 100% da altura da tela (fora da tela) */
+    opacity: 0;    /* Vai ficando transparente até desaparecer */
+  }
 }
 
 #fogosCanvas {
@@ -177,6 +185,7 @@ button:hover {
 #mensagemFinal p {
   margin: 15px 0; /* Espaçamento entre os parágrafos */
 }
+
 
 
 
