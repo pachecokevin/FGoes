@@ -165,7 +165,7 @@ button:hover {
   opacity: 0;
   position: fixed;
   top: 50%;  /* Centraliza verticalmente */
-  left: 50%; /* Centraliza horizontalmente */
+  left: 150%; /* Centraliza horizontalmente */
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
   text-align: center;  /* Centraliza o texto dentro do elemento */
@@ -175,7 +175,8 @@ button:hover {
 #mensagemFinal p {
   margin: 10px 0; /* Espaçamento entre os parágrafos */
 
-}
+
+
 
 
 
