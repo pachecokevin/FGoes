@@ -142,6 +142,16 @@ button:hover {
   z-index: 999;
 }
 
+#telaEsmaecida {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  display: none;
+}
 
 
 #mensagemFinal {
@@ -155,17 +165,19 @@ button:hover {
   transform: scale(0);
   opacity: 0;
   position: fixed;
-  top: 0%;  /* Centraliza verticalmente */
-  left: 0%; /* Centraliza horizontalmente */
+  top: 5%;
+  left: 85%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
-  text-align: center;  /* Centraliza o texto dentro do elemento */
-  line-height: 1.5;  /* Espacamento entre as linhas */
 }
+
+
+
 
 #mensagemFinal p {
   margin: 15px 0; /* Espaçamento entre os parágrafos */
 }
+
 
 
 
