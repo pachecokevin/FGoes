@@ -165,10 +165,13 @@ button:hover {
   opacity: 0;
   position: fixed;
   top: 5%;
-  left: 85%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
+  text-align: center;  /* Garantir que o texto dentro do elemento também esteja centralizado */
 }
+
+
 
 
 
