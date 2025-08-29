@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Feliz Aniversário ❤</title>
-  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-  
-  <div class="topo" id="botaoMusica">
-    <button onclick="tocarMusica()">Aqui primeiro</button>
+
+  <div id="overlay">
+    <button id="botaomusica" onclick="tocarMusica()">Aqui primeiro</button>
   </div>
 
   <div id="telaEsmaecida"></div>
+
 
   <div class="container">
     <h1>Feliz Aniversário, meu amor ❤</h1>
     <p>Hoje é um dia especial porque celebramos a sua vida.</p>
     <p>Você ilumina meus dias e transforma tudo em felicidade.</p>
-    <p>Sou grato por ter você ao meu lado.</p>  
+    <p>Sou grato por ter você ao meu lado.</p>
 
     <div class="fotos">
       <img src="essa pasta/primeira.jpeg" alt="Foto especial" class="foto">
@@ -39,38 +40,43 @@
       </video>
       <p>Essa lembrança é inesquecível ✨</p>
 
+      <video class="video" autoplay muted loop>
+        <source src="essa pasta/video 3.mp4" type="video/mp4">
+        Seu navegador não suporta o formato de vídeo.
+      </video>
+      <p>Essa lembrança é inesquecível ✨</p>
+
       <img src="essa pasta/quinta.jpeg" alt="Mais uma foto" class="foto">
       <p>Quero viver infinitas histórias ao seu lado ✨</p>
 
       <img src="essa pasta/sexta.jpeg" alt="Mais uma foto" class="foto">
       <p>Quero viver infinitas histórias ao seu lado ✨</p>
 
-      <img src="essa pasta/sexta.jpeg" alt="Mais uma foto" class="foto">
+      <img src="essa pasta/setima.jpeg" alt="Mais uma foto" class="foto">
       <p>Quero viver infinitas histórias ao seu lado ✨</p>
+
+      <img src="essa pasta/nona.jpeg" alt="Mais uma foto" class="foto">
+      <p>Quero viver infinitas histórias ao seu lado ✨</p>
+
+      <img src="essa pasta/decima.jpeg" alt="Mais uma foto" class="foto">
+      <p>Quero viver infinitas histórias ao seu lado ✨</p>
+
+      <img src="essa pasta/decima primeira.jpeg" alt="Mais uma foto" class="foto">
+      <p>Quero viver infinitas histórias ao seu lado ✨</p>
+
+      <img src="essa pasta/decima segunda.jpeg" alt="Mais uma foto" class="foto">
+      <p>Quero viver infinitas histórias ao seu lado ✨</p>
+      
     </div>
 
     <button onclick="finalSurpresa()">Aperte essa budega 😂</button>
     <p id="mensagemFinal">Feliz Aniversário 🎂<br>Te amo muito ❤</p>
   </div>
-      
 
   <audio id="musica" src="essa pasta/musica de fundo.mpeg"></audio>
   <audio id="somBotao" src="essa pasta/botao final.mpeg"></audio>
   <canvas id="fogosCanvas"></canvas>
-  <div id="container"></div>
 
   <script src="script.js"></script>
 </body>
-
 </html> 
-
-
-
-
-
-
-
-
-
-
-
