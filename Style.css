@@ -159,22 +159,23 @@ button:hover {
   font-weight: bold;
   color: #FFFFFF;
   text-shadow: 4px 4px 10px #000;
-  margin-top: 40px;
+  margin-top: 30px;
   transition: opacity 1s, transform 1s;
-  transform: scale(0);
+  transform: scale(2);
   opacity: 0;
   position: center;
-  top: 70%;  /* Centraliza verticalmente */
-  left: 350%; /* Centraliza horizontalmente */
+  top: 0%;  /* Centraliza verticalmente */
+  left: 0%; /* Centraliza horizontalmente */
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
   text-align: center;  /* Centraliza o texto dentro do elemento */
-  line-height: 1.5;  /* Espacamento entre as linhas */
+  line-height: 2.0;  /* Espacamento entre as linhas */
 }
 
 #mensagemFinal p {
-  margin: 10px 0; /* Espaçamento entre os parágrafos */
+  margin: 10px 1; /* Espaçamento entre os parágrafos */
 }
+
 
 
 
