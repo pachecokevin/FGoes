@@ -155,18 +155,19 @@ button:hover {
 
 #mensagemFinal {
   display: none;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
-  color: #ffeb3b;
+  color: #FFFFFF;
   text-shadow: 4px 4px 10px #000;
   margin-top: 40px;
   transition: opacity 1s, transform 1s;
   transform: scale(0);
   opacity: 0;
   position: fixed;
-  top: 25%;
-  left: 27%;
+  top: 15%;
+  left: 17%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1000;
 }
+
 
