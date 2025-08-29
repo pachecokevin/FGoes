@@ -173,11 +173,12 @@ button:hover {
   transform: scale(0);
   opacity: 0;
   position: fixed;
-  top: 187%;
-  left: 183%;
+  top: 0%;
+  left: 0%;
   transform: translate(-50%, -50%) scale(0);
-  z-index: 1000;
+  z-index: 900;
 }
+
 
 
 
