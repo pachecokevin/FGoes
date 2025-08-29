@@ -159,9 +159,9 @@ button:hover {
   font-weight: bold;
   color: #FFFFFF;
   text-shadow: 4px 4px 10px #000;
-  margin-top: 30px;
+  margin-top: 35px;
   transition: opacity 1s, transform 1s;
-  transform: scale(2);
+  transform: scale(1);
   opacity: 0;
   position: center;
   top: 0%;  /* Centraliza verticalmente */
@@ -173,8 +173,9 @@ button:hover {
 }
 
 #mensagemFinal p {
-  margin: 10px 1; /* Espaçamento entre os parágrafos */
+  margin: 10px 2; /* Espaçamento entre os parágrafos */
 }
+
 
 
 
