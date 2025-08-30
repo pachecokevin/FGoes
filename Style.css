@@ -172,7 +172,7 @@ button:hover {
   transition: opacity 1s, transform 1s;
   transform: scale(0);
   opacity: 0;
-  position: center;
+  position: fixed;
   top: 0%;
   left: 0%;
   transform: translate(-50%, -50%) scale(0);
