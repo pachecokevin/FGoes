@@ -164,7 +164,7 @@ button:hover {
 
 #mensagemFinal {
   display: none;
-  font-size: 1em;
+  font-size: 0,05em;
   font-weight: bold;
   color: #FFFFFF;
   text-shadow: 4px 4px 10px #000;
@@ -176,7 +176,7 @@ button:hover {
   top: 0%;
   left: 0%;
   transform: translate(-50%, -50%) scale(0);
-  z-index: 600;
+  z-index: 400;
 }
 
 
