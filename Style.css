@@ -156,8 +156,8 @@ button:hover {
   display: none;
   font-size: 1em;
   font-weight: bold;
-  color: #FFFFFF;
-  text-shadow: 5px 5px 12px #9400D3;
+  color: white;
+  text-shadow: 2px 2px 5px red;
   margin-top: 40px;
   transition: opacity 1s, transform 1s;
   transform: scale(0);
@@ -168,6 +168,7 @@ button:hover {
   transform: translate(-50%, -50%) scale(0);
   z-index: 650;
 }
+
 
 
 
