@@ -113,7 +113,7 @@ button:hover {
 .emoji {
   position: fixed;
   bottom: -50px;
-  font-size: 3,5em;
+  font-size: 5 em;
   animation: subir 6s linear infinite;
   opacity: 0,9;
   pointer-events: none;
