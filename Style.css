@@ -157,7 +157,7 @@ button:hover {
   font-size: 1em;
   font-weight: bold;
   color: #800080;
-  text-shadow: 4px 4px 10px #000;
+  text-shadow: 4px 4px 10px #FFFFFF;
   margin-top: 40px;
   transition: opacity 1s, transform 1s;
   transform: scale(0);
