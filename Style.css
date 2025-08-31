@@ -114,7 +114,7 @@ button:hover {
   position: fixed;
   bottom: -50px;
   font-size: 3em;
-  animation: subir 8s linear infinite;
+  animation: subir 4s linear infinite;
   opacity: 0.8;
   pointer-events: none;
 }
