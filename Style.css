@@ -113,9 +113,9 @@ button:hover {
 .emoji {
   position: fixed;
   bottom: -50px;
-  font-size: 3em;
-  animation: subir 4s linear infinite;
-  opacity: 0.8;
+  font-size: 1em;
+  animation: subir 6s linear infinite;
+  opacity: 0,5;
   pointer-events: none;
 }
 @keyframes subir {
@@ -156,8 +156,8 @@ button:hover {
   display: none;
   font-size: 1em;
   font-weight: bold;
-  color: #ac58aa;
-  text-shadow: 4px 4px 10px #FFFFFF;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 10px #ac58aa;
   margin-top: 40px;
   transition: opacity 1s, transform 1s;
   transform: scale(0);
