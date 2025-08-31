@@ -12,6 +12,37 @@ function tocarMusica() {
   overlay.style.display = 'none';
 }
 
+const emojis = ["❤️", "🌻", "🎊"];
+const tela = document.body;
+
+function criarEmoji() {
+  const emoji = document.createElement("div");
+  emoji.classList.add("emoji");
+
+  // Emoji aleatório
+  emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+
+  // Posição horizontal aleatória (0% a 100%)
+  emoji.style.left = Math.random() * 100 + "%";
+
+  // Tamanhos e durações diferentes
+  const tamanho = 20 + Math.random() * 30; // entre 20px e 50px
+  const duracao = 5 + Math.random() * 5;   // entre 5s e 10s
+  emoji.style.fontSize = `${tamanho}px`;
+  emoji.style.animationDuration = `${duracao}s`;
+
+  // Adiciona na tela
+  tela.appendChild(emoji);
+
+  // Remove depois que termina a animação
+  setTimeout(() => {
+    tela.removeChild(emoji);
+  }, duracao * 1000);
+}
+
+// Cria novos emojis a cada 1 segundo
+setInterval(criarEmoji, 800);
+
 function mensagemFinal() {
     // Mudando o texto do botão para uma seta
     const botao = document.getElementById("botaofinal");
