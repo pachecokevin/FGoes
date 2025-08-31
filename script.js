@@ -12,12 +12,19 @@ function tocarMusica() {
   overlay.style.display = 'none';
 }
 
-function finalSurpresa() {
-  const som = document.getElementById("somBotao");
+function mensagemFinal() {
+    // Mudando o texto do botão para uma seta
+    const botao = document.getElementById("botaofinal");
+    botao.textContent = "⬇️";  // Coloca a seta para baixo
+    const som = document.getElementById("somBotao");
   som.play();
-  document.getElementById("telaEsmaecida").style.display = "block";
-  const mensagem = document.getElementById("mensagemFinal");
-  mensagem.style.display = "block";
+    document.getElementById("telaEsmaecida").style.display = "block";
+    const mensagem = document.getElementById("mensagemFinal");
+    mensagem.style.display = "block";
+  // Agora aplica a transição
+  mensagem.style.transform = "scale(1)";
+  mensagem.style.opacity = "1";
+
 
   setTimeout(() => {
     mensagem.style.transform = "scale(1)";
