@@ -169,8 +169,7 @@ button:hover {
   z-index: 650;
 }
 
-/* Botão flutuante redondo */
-    .download-btn{
+.download-btn {
       position: fixed;
       right: 20px;
       bottom: 20px;
@@ -199,3 +198,4 @@ button:hover {
       width: 28px;
       height: 28px;
     }
+
