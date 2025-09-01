@@ -168,3 +168,34 @@ button:hover {
   transform: translate(-50%, -50%) scale(0);
   z-index: 650;
 }
+
+/* Botão flutuante redondo */
+    .download-btn{
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(124, 58, 237, 0.9); /* Roxo com transparência */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(124,58,237,0.5);
+      transition: transform .2s ease, box-shadow .2s ease;
+      text-decoration: none;
+    }
+    .download-btn:hover{
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(124,58,237,0.7);
+    }
+    .download-btn:active{
+      transform: scale(0.95);
+    }
+    .download-btn svg{
+      width: 28px;
+      height: 28px;
+    }
